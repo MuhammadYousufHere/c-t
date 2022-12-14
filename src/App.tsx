@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import Footer from './components/Footer';
+
 import Loader from './components/Loader';
-import Home from './pages/Home';
-import More from './pages/Home/More';
+
+import AppRoutes from './routes/AppRoutes';
 
 function App() {
   // const url = `https://covid-19.nyc3.digitaloceanspaces.com/public/owid-covid-data.json`;
@@ -16,15 +16,7 @@ function App() {
   }, []);
   if (loading) return <Loader />;
 
-  return (
-    <>
-      <div className='container-fluid pt-3'>
-        <Home />
-      </div>
-      <More />
-      <Footer />
-    </>
-  );
+  return <AppRoutes />;
 }
 
 export default App;

@@ -9,7 +9,7 @@ export const BVariant = {
 };
 export type Bprops = {
   variant: BVariantProps['variant'];
-  onClick?: (e: React.MouseEventHandler<HTMLButtonElement>) => void;
+  onClick?: () => void;
   type?: 'button' | 'submit' | 'reset';
 };
 export type BVariantProps = {

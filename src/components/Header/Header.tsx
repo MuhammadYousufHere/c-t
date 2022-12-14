@@ -1,7 +1,13 @@
+import { useAuth0 } from '@auth0/auth0-react';
+import { useEffect } from 'react';
 import './style.scss';
+
 import logo from '../../assets/logo1.png';
 import Button from '../Button/Button';
+
 const Header = () => {
+  const { loginWithRedirect } = useAuth0();
+
   return (
     <header className='header '>
       <div className='container d-flex justify-content-between'>
@@ -15,7 +21,10 @@ const Header = () => {
           </figure>
         </div>
         <div className='action-btn'>
-          <Button variant='outlined' />
+          <Button
+            variant='outlined'
+            onClick={() => loginWithRedirect()}
+          />
         </div>
       </div>
     </header>
