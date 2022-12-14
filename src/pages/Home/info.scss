@@ -1,0 +1,45 @@
+@use '../../styles/colors' as *;
+@use '../../styles/variables' as *;
+.coronavirus {
+  margin: 70px 0;
+}
+.coronavirus__title {
+  font-weight: bold;
+  font-family: $font-stack-para;
+  font-size: 20px;
+  line-height: 124%;
+  color: $text-secondary;
+}
+.coronavirus__span {
+  font-weight: 500;
+  font-size: 40px;
+  font-family: $font-stack-head;
+  line-height: 60px;
+  text-transform: capitalize;
+  color: $text-primary;
+}
+.coronavirus__desc {
+  margin-top: 18px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: $text-lighter;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.coronavirus__button {
+  position: relative;
+  background: rgba(250, 86, 82, 0.15);
+  border-radius: 65px;
+  padding: 21px 50px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  top: 55px;
+  text-transform: capitalize;
+  color: $text-secondary;
+  text-decoration: none;
+}
+.coronavirus__button:hover {
+  box-shadow: 0px 0px 20px rgba(199, 199, 199, 0.2);
+}

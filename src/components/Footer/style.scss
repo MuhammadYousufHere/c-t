@@ -1,0 +1,58 @@
+@use '../../styles/colors' as *;
+@use '../../styles/variables' as *;
+.footer {
+  color: $text-secondary;
+}
+.contact {
+  margin-top: 50px;
+}
+.contact .help {
+  position: relative;
+}
+.contact .help__desc {
+  margin: auto;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  font-family: $font-stack-head;
+  color: $text-primary;
+}
+.contact .help__mail {
+  background: $bg-light;
+  box-shadow: $shadow_i;
+  border-radius: 57px;
+  padding: 30px 40px;
+  outline: none;
+  border: none;
+  margin-top: 50px;
+  width: 100%;
+  font-size: 14px;
+}
+.contact .help__mail::placeholder {
+  font-size: 14px;
+  color: $text-lighter;
+  letter-spacing: 0.07em;
+}
+.contact .help__send {
+  position: absolute;
+  background: $bg-secondary;
+  border-radius: 157px;
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  color: $text-light;
+  padding: 10px 30px;
+  right: 15px;
+  bottom: 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 540px) {
+  .contact .help__desc {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+}

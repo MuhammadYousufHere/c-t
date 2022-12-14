@@ -1,0 +1,82 @@
+@use '../../styles/colors' as *;
+@use '../../styles/variables' as *;
+.upside {
+  margin: 70px 0;
+}
+.upside__title {
+  font-family: $font-stack-para;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  color: $text-secondary;
+  margin-top: 40px;
+}
+.upside__span {
+  display: block;
+  font-family: $font-stack-head;
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  color: $text-primary;
+  margin-bottom: 20px;
+}
+.upside__desc {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: $text-lighter;
+}
+.contagion .card {
+  box-shadow: $shadow_i;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 40px 30px 60px;
+  min-height: 450px;
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+}
+.contagion .card:hover {
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+  border-bottom: 6px solid $bg-primary;
+}
+.contagion .card__figure {
+  margin: auto;
+  display: block;
+  width: 250px;
+}
+.contagion .card__image {
+  width: 220px;
+}
+.contagion .card__title {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 147%;
+  text-transform: capitalize;
+  color: $text-primary;
+  display: -webkit-box;
+  font-family: $font-stack-para;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.contagion .card__desc {
+  margin-top: 13px;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #4b4f51;
+  overflow: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

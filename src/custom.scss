@@ -1,0 +1,8 @@
+$primary: #6f42c1;
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import '~bootstrap/scss/bootstrap';
+body {
+  background: linear-gradient(180deg, rgba(255, 141, 155, 0.1) 0%, white 10%);
+  background-repeat: no-repeat;
+}

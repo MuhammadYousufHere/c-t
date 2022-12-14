@@ -1,0 +1,95 @@
+.section.cta-banner {
+  background-color: #f8f8f9;
+  padding: 7rem 0;
+}
+.section.cta-banner .illustration.__4 {
+  right: -7rem;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+.section.cta-banner .title-2 {
+  padding-bottom: 1rem;
+}
+.section.cta-banner .section-description {
+  padding-bottom: 2rem;
+}
+.section.cta-banner-select {
+  position: relative;
+  min-height: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+.section.cta-banner-select.sign-up-banner {
+  // background-color: #060628;
+  background: linear-gradient(
+    180deg,
+    rgb(137 57 69 / 10%) 0%,
+    rgb(255 225 225) 10%
+  );
+  background-repeat: no-repeat;
+}
+.section.cta-banner-select.book-a-demo-banner {
+  background-color: #3c43b7;
+}
+.section.cta-banner-select .title-3,
+.section.cta-banner-select p {
+  color: #fff;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.section.cta-banner-select .text-wrap:before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  top: 0;
+  left: -30px;
+  background-color: #f8b611;
+}
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  border: 0;
+  color: #fff;
+  background-color: #4c54dd;
+  line-height: 46px;
+  padding: 0 1.5rem;
+  white-space: nowrap;
+  text-align: center;
+}
+.btn.yellow {
+  background-color: #f8b611;
+}
+.section.cta-banner-select .text-wrap {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  position: relative;
+}
+
+@media screen and (max-width: 1025px) {
+  .cta-banner-select {
+    img {
+      max-width: 400px;
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .cta-banner-select {
+    img {
+      display: none;
+    }
+  }
+  .section.cta-banner-select.sign-up-banner {
+    // background-color: #060628;
+    background: url('../../assets/absract-banner-illustration-2.svg'),
+      rgb(222, 182, 162);
+    background-repeat: no-repeat;
+  }
+}

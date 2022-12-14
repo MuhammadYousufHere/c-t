@@ -1,0 +1,152 @@
+.home {
+}
+.section {
+  padding-bottom: 100px;
+}
+.section .direction {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+.section .center {
+  display: flex;
+  align-items: center;
+}
+.section__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 70px;
+  color: #fa5652;
+}
+.section__span {
+  font-family: 'Rubik Gemstones', cursive;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 40px;
+  color: #035755;
+  text-transform: capitalize;
+}
+.section__desc {
+  margin-top: 20px;
+  font-family: 'Playfair Display', serif;
+
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 30px;
+  color: #4b4f51;
+  text-transform: capitalize;
+}
+.section__button {
+  position: relative;
+  top: 30%;
+  padding: 15px 40px;
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+
+  background: #f5c827;
+  box-shadow: 0px 8px 87px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  font-family: 'Playfair Display', serif;
+
+  &:hover {
+    color: #ffffff;
+  }
+}
+.section__button:hover {
+  box-shadow: 0px 0px 20px rgba(199, 199, 199, 0.7);
+  transition: 0.3s ease;
+}
+.section__image {
+  width: 400px;
+  z-index: 0;
+  margin-left: 100px;
+}
+.section__virus1 {
+  position: absolute;
+  left: 0;
+  width: 130px;
+  z-index: -1;
+  animation: spin 10s linear infinite;
+}
+.section__virus2 {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 100px;
+  opacity: 0.8;
+  z-index: -1;
+  animation: spin 20s linear infinite;
+}
+.img-sec {
+  position: relative;
+}
+.section__virus3 {
+  position: absolute;
+  top: 200px;
+  right: 40px;
+  width: 100px;
+  z-index: -1;
+  animation: spin 20s linear infinite;
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.section .covidImage__image {
+  width: 330px;
+}
+
+.coronavirus__title {
+  font-weight: bold;
+  font-family: var(--fontRedHat);
+  font-size: 20px;
+  line-height: 124%;
+  color: #fa5652;
+}
+.coronavirus__span {
+  font-weight: bold;
+  font-size: 40px;
+  font-family: var(--fontRedHat);
+  line-height: 60px;
+  text-transform: capitalize;
+  color: #035755;
+}
+.coronavirus__desc {
+  margin-top: 18px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #4b4f51;
+  font-family: Roboto;
+}
+
+.coronavirus__button {
+  position: relative;
+  background: rgba(250, 86, 82, 0.15);
+  border-radius: 65px;
+  padding: 21px 50px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  top: 55px;
+  text-transform: capitalize;
+  color: #fa5652;
+  text-decoration: none;
+}
+.coronavirus__button:hover {
+  box-shadow: 0px 0px 20px rgba(199, 199, 199, 0.2);
+}
+
+@media screen and (max-width: 540px) {
+  .img-sec {
+    display: none;
+  }
+  .section__button {
+    top: 10%;
+  }
+}
