@@ -10,8 +10,11 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Auth0Provider
-      domain={process.env.REACT_APP_AUTH0_DOMAIN!}
-      clientId={process.env.REACT_APP_AUTH0_CLIENT_ID!}
+      domain={process.env.REACT_APP_AUTH0_DOMAIN || 'myauth-app.us.auth0.com'}
+      clientId={
+        process.env.REACT_APP_AUTH0_CLIENT_ID ||
+        'v6rL9hyCO1FnoRSc9YIMupxRDcnH1OjB'
+      }
       redirectUri={window.location.origin + '/visualise'}
     >
       <Router>
