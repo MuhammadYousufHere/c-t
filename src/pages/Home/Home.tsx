@@ -1,12 +1,18 @@
+import { useAuth0 } from '@auth0/auth0-react';
+import Button from '../../components/Button';
 import Header from '../../components/Header';
 import Containgen from './Containgen';
 import './HomeStyles.scss';
 import Info from './Info';
-
 const Home = () => {
+  const { loginWithRedirect } = useAuth0();
+
+  const authToVisualise = () => {
+    loginWithRedirect();
+  };
   return (
     <div className='home'>
-      <Header />
+      <Header onSignin={authToVisualise} />
 
       <section className='section hero'>
         <div className='container'>
@@ -20,12 +26,11 @@ const Home = () => {
                 There is no specific medicine to prevent or treat coronavirus
                 disease (COVID-19). People may need supportive care to .
               </p>
-              <a
-                href='/'
-                className='section__button seciton__button--center'
-              >
-                I Want to Know More
-              </a>
+              <Button
+                variant='primary'
+                title='I Want To Know More'
+                onClick={authToVisualise}
+              />
             </div>
             <div className='col-12 col-md-6 col-lg-6 text-position img-sec'>
               <img

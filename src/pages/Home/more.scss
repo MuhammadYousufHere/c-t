@@ -26,11 +26,8 @@
 }
 .section.cta-banner-select.sign-up-banner {
   // background-color: #060628;
-  background: linear-gradient(
-    180deg,
-    rgb(137 57 69 / 10%) 0%,
-    rgb(255 225 225) 10%
-  );
+  background: #fff2f6;
+
   background-repeat: no-repeat;
 }
 .section.cta-banner-select.book-a-demo-banner {
@@ -38,7 +35,7 @@
 }
 .section.cta-banner-select .title-3,
 .section.cta-banner-select p {
-  color: #fff;
+  color: #ff6492;
   line-height: 1.5;
   letter-spacing: 0;
 }

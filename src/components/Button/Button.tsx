@@ -1,12 +1,12 @@
 import './style.scss';
 import { Bprops } from './types.d';
-const Button = ({ variant = 'primary', onClick }: Bprops) => {
+const Button = ({ variant = 'primary', title, onClick }: Bprops) => {
   return (
     <button
       className={`uibtn-${variant}`}
       onClick={onClick}
     >
-      Sign in
+      {title}
     </button>
   );
 };

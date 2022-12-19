@@ -1,0 +1,10 @@
+.visualise {
+  .strip {
+    padding: 2rem 1rem;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e5e8ec;
+    &__content {
+      display: flex;
+    }
+  }
+}

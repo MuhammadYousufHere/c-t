@@ -11,7 +11,7 @@ const Containgen = () => {
     {
       id: 2,
       title: 'Human Contacts',
-      desc: 'Washing your hands is one of thesimplest ways you can protect',
+      desc: 'Washing your hands is one of the simplest ways you can protect youresef and others from the spread of germs and viruses.',
       imgSrc:
         'https://github.com/alaattinerby/Covid-19-Website/blob/main/Covid-19/img/card2-image.png?raw=true',
     },

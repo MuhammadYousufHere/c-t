@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './more.scss';
 const More = () => {
   return (
@@ -8,13 +9,13 @@ const More = () => {
             <h3 className='title-3 '>
               Go beyond your sense to supercharge your analytics
             </h3>
-            <a
-              href='/'
+            <Link
+              to='/visualise'
               className='btn yellow'
               data-google-tag-manager-id='sign-up-free'
             >
               <span className='btn-title'>See How</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

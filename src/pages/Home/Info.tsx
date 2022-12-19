@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './info.scss';
 
 const Info = () => {
@@ -24,12 +25,12 @@ const Info = () => {
               COVID-19.Lauren Sauer, M.S., the director of operations with the
               Johns Hopkins Office of Critical Event Preparedness and Response
             </p>
-            <a
-              href='/'
+            <Link
+              to='/visualise'
               className='coronavirus__button'
             >
               Learn More
-            </a>
+            </Link>
           </div>
         </div>
       </div>

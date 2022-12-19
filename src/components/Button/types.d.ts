@@ -9,6 +9,7 @@ export const BVariant = {
 };
 export type Bprops = {
   variant: BVariantProps['variant'];
+  title: string;
   onClick?: () => void;
   type?: 'button' | 'submit' | 'reset';
 };
