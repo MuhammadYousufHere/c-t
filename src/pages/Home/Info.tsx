@@ -26,7 +26,7 @@ const Info = () => {
               Johns Hopkins Office of Critical Event Preparedness and Response
             </p>
             <Link
-              to='/visualise'
+              to='/login'
               className='coronavirus__button'
             >
               Learn More

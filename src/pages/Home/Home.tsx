@@ -1,18 +1,14 @@
-import { useAuth0 } from '@auth0/auth0-react';
 import Button from '../../components/Button';
 import Header from '../../components/Header';
 import Containgen from './Containgen';
 import './HomeStyles.scss';
 import Info from './Info';
+import { useNavigate } from 'react-router-dom';
 const Home = () => {
-  const { loginWithRedirect } = useAuth0();
-
-  const authToVisualise = () => {
-    loginWithRedirect();
-  };
+  const navigate = useNavigate();
   return (
     <div className='home'>
-      <Header onSignin={authToVisualise} />
+      <Header onSignin={() => navigate('/login')} />
 
       <section className='section hero'>
         <div className='container'>
@@ -29,7 +25,7 @@ const Home = () => {
               <Button
                 variant='primary'
                 title='I Want To Know More'
-                onClick={authToVisualise}
+                onClick={() => navigate('/login')}
               />
             </div>
             <div className='col-12 col-md-6 col-lg-6 text-position img-sec'>

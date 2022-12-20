@@ -4,6 +4,7 @@ import Home from '../pages/Home';
 import More from '../pages/Home/More';
 import Visualise from '../pages/Visualise';
 import PrivateRoute from './PrivateRotes';
+import Signin from '../pages/Signin';
 const AppRoutes = () => {
   return (
     <Routes>
@@ -18,6 +19,10 @@ const AppRoutes = () => {
             <Footer />
           </>
         }
+      />
+      <Route
+        path='/login'
+        element={<Signin />}
       />
       <Route element={<PrivateRoute />}>
         <Route

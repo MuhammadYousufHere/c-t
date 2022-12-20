@@ -10,7 +10,7 @@ const More = () => {
               Go beyond your sense to supercharge your analytics
             </h3>
             <Link
-              to='/visualise'
+              to='/login'
               className='btn yellow'
               data-google-tag-manager-id='sign-up-free'
             >
